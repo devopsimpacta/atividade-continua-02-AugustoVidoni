@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action='info.html' method='POST' name='cadastro' >
+            <p><label>Nome de usuário: </label><br/>
+            <input type='text' required name='user'/></p>
+
+            <p><label>E-mail:<label><br/>
+            <input type='email' name='email' required>
+            
+        
+            <p><label>Digite uma senha de no máximo 10 caracteres: </label> <br/>
+            <input type='password' maxlength="10" name='password' required/></p>
+            <p><label>Repita a senha: </label> <br/>
+            <input type='password' maxlength="10" name='password' required/></p><br/>
+
+            <p><label>Nome completo:  </label><br/>
+            <input type='text' name='nome'/></p>
+
+            <p><label>CEP:</label> </label><br/>
+            <input type='number' name='cep' maxlength='9'/></p>
+
+            <p><label>Nascimento</label><br/>                
+            <input type='date' name='data'></p>
+
+            <p><label>Cor favorita:</label>
+            <input type='color' name='cor'></p><br/>
+            <select name='estado'>
+                
+                <option value='AC'>Acre</option>
+                <option value='AL'>Alagoas</option>
+                <option value='AP'>Amapá</option>
+                <option value='AM'>Amazonas</option>
+                <option value='BA'>Bahia</option>
+                <option value='CE'>Ceará</option>
+                <option value='DF'>Distrito Federal</option>
+                <option value='ES'>Espírito Santo</option>
+                <option value='GO'>Goiás</option>
+                <option value='MA'>Maranhão</option>
+                <option value='MT'>Mato Grosso</option>
+                <option value='MS'>Mato Grosso do Sul</option>
+                <option value='MG'>Minas Gerais</option>
+                <option value='PA'>Pará</option>
+                <option value='PB'>Paraíba</option>
+                <option value='PR'>Paraná</option>
+                <option value='PE'>Pernambuco</option>
+                <option value='PI'>Piauí</option>
+                <option value='RJ'>Rio de Janeiro</option>
+                <option value='RN'>Rio Grande do Norte</option>
+                <option value='RS'>Rio Grande do Sul</option>
+                <option value='RO'>Rondônia</option>
+                <option value='RR'>Roraima</option>
+                <option value='SC'>Santa Catarina</option>
+                <option value='SP'>São Paulo</option>
+                <option value='SE'>Sergipe</option>
+                <option value='TO'>Tocantins</option>
+                
+            </select><br/><br/>
+            <label>Disciplinas candidatas a DP:</label><br/>
+            <input type='checkbox' name='tecWeb'/>Tecnologia Web <br/>
+            <input type='checkbox' name='lib'/>Libras <br/>
+            <input type='checkbox' name='liSq'/>Linguagem SQL<br/>            
+            <input type='checkbox' name='liPy'/>Linguagem Python<br/>
+            <input type='checkbox' name='gePr'/>Gestão de Projetos<br/>
+            <input type='checkbox' name='enSo'/>Engenharia de software<br/>
+            <input type='checkbox' name='devOps'/>Ambiente e desenvolvimento e operação<br/><br/>
+            <label>Matéria favorita:</label><br/>
+            <input type='radio' name='fav' value='tecWeb'/>Tecnologia Web <br/>
+            <input type='radio' name='fav' value='lib'/>Libras <br/>
+            <input type='radio' name='fav' value='liSq'/>Linguagem SQL<br/>            
+            <input type='radio' name='fav' value='liPy'/>Linguagem Python<br/>
+            <input type='radio' name='fav' value='gePr'/>Gestão de Projetos<br/>
+            <input type='radio' name='fav' value='enSo'/>Engenharia de software<br/>
+            <input type='radio' name='fav' value='devOps'/>Ambiente e desenvolvimento e operação<br/><br/>
+            
+
+
+            Observações:<br/>
+            <textarea placeholder="Comentário"></textarea><br/>
+
+            <input type='submit' value='Concluir'>
+
+        
+
+            
+
+
+    </form><br/>
+    <a href='index.html'>voltar</a>
+</body>
+</html>
